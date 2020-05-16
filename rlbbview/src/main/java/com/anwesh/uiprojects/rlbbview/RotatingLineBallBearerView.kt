@@ -1,15 +1,9 @@
-package com.anwesh.uiprojects.rotatinglineballbeaterview
+package com.anwesh.uiprojects.rlbbview
 
 /**
  * Created by anweshmishra on 17/05/20.
  */
 
-import android.app.Activity
-import android.content.Context
-import android.view.View
-import android.view.MotionEvent
-import android.graphics.Paint
-import android.graphics.Canvas
 import android.graphics.Color
 
 val nodes : Int = 5

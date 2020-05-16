@@ -181,4 +181,27 @@ class RotatingLineBallBeaterView(ctx : Context) : View(ctx) {
             curr.startUpdating(cb)
         }
     }
+
+    data class Renderer(var view : RotatingLineBallBeaterView) {
+
+        private val animator : Animator = Animator(view)
+        private val rlbb : RotatingLineBall = RotatingLineBall(0)
+        private val paint : Paint = Paint(Paint.ANTI_ALIAS_FLAG)
+
+        fun render(canvas : Canvas) {
+            canvas.drawColor(backColor)
+            rlbb.draw(canvas, paint)
+            animator.animate {
+                rlbb.update {
+                    animator.stop()
+                }
+            }
+        }
+
+        fun handleTap() {
+            rlbb.startUpdating {
+                animator.start()
+            }
+        }
+    }
 }

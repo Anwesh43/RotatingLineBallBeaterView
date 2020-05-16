@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RotatingLineBallBeaterView.iml" filepath="$PROJECT_DIR$/RotatingLineBallBeaterView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rlbbview/rlbbview.iml" filepath="$PROJECT_DIR$/rlbbview/rlbbview.iml" />
       <module fileurl="file://$PROJECT_DIR$/rotatinglineballbeaterview2/rotatinglineballbeaterview2.iml" filepath="$PROJECT_DIR$/rotatinglineballbeaterview2/rotatinglineballbeaterview2.iml" />
     </modules>
   </component>

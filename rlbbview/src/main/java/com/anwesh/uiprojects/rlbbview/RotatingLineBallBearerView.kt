@@ -33,10 +33,10 @@ fun Canvas.drawRotatingLineBall(scale : Float, size : Float, h : Float, paint : 
     val sf2 : Float = sf.divideScale(1, parts)
     val r : Float = size / rFactor
     save()
-    rotate(90f * sf1)
+    rotate(-90f * sf1)
     drawLine(0f, 0f, 0f, 2 * size, paint)
-    drawCircle(size, -r  - (h / 2 - 2 * r) * sf2, r, paint)
     restore()
+    drawCircle(2 * size, -r  - (h / 2 - 2 * r) * sf2, r, paint)
 }
 
 fun Canvas.drawRLBBNode(i : Int, scale : Float, paint : Paint) {

@@ -206,4 +206,13 @@ class RotatingLineBallBeaterView(ctx : Context) : View(ctx) {
             }
         }
     }
+
+    companion object {
+
+        fun create(activity : Activity) : RotatingLineBallBeaterView {
+            val view : RotatingLineBallBeaterView = RotatingLineBallBeaterView(activity)
+            activity.setContentView(view)
+            return view
+        }
+    }
 }
